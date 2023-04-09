@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Rick and Morty";
+  src: url(./assets/fonts/get_schwifty.ttf);
+}
+@font-face {
+  font-family: "Holy Stain Outline";
+  src: url(./assets/fonts/holystainoutline-gopvo.ttf);
+}
+@font-face {
+  font-family: "Holy Stain Demo";
+  src: url(./assets/fonts/holystaindemo-jexw9.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Rick and Morty";
+  color: #00b900;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::before {
+  filter: blur(10px);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./assets/images/black_green.jpg);
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
